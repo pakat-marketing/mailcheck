@@ -36,6 +36,11 @@
   "main": "./dist/core/index.cjs",
   "module": "./dist/core/index.js",
   "types": "./dist/core/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "react": ["./dist/react/index.d.ts"]
+    }
+  },
   "scripts": {
     "build": "tsup",
     "typecheck": "tsc --noEmit",
