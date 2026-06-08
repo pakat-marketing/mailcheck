@@ -20,7 +20,6 @@ export function useMailcheck(
 
   const immediate = useMemo(
     () => (debounceMs > 0 ? null : suggest({ email, ...suggestOptions })),
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     [email, debounceMs, optionsKey],
   );
 
@@ -34,7 +33,6 @@ export function useMailcheck(
       setDebounced(suggest({ email, ...suggestOptions }));
     }, debounceMs);
     return () => clearTimeout(timer);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [email, debounceMs, optionsKey]);
 
   return debounceMs > 0 ? debounced : immediate;
