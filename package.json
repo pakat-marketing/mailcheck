@@ -38,7 +38,9 @@
   "types": "./dist/core/index.d.ts",
   "typesVersions": {
     "*": {
-      "react": ["./dist/react/index.d.ts"]
+      "react": [
+        "./dist/react/index.d.ts"
+      ]
     }
   },
   "scripts": {
@@ -60,6 +62,7 @@
   "devDependencies": {
     "@size-limit/preset-small-lib": "^11.1.6",
     "@testing-library/react": "^16.0.1",
+    "@types/node": "^20",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@typescript-eslint/eslint-plugin": "^8.13.0",
