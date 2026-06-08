@@ -1,6 +1,7 @@
 {
   "name": "mailcheck",
   "version": "2.0.0",
+  "private": true,
   "description": "Suggest a corrected domain when users misspell their email address. Framework-agnostic core + React hook/component.",
   "keywords": [
     "email",
@@ -41,8 +42,7 @@
     "lint": "eslint .",
     "test": "vitest run",
     "test:watch": "vitest",
-    "size": "size-limit",
-    "prepublishOnly": "pnpm build"
+    "size": "size-limit"
   },
   "peerDependencies": {
     "react": ">=18"

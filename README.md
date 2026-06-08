@@ -13,10 +13,21 @@ someone types `user@gmial.con`, mailcheck suggests `user@gmail.com`.
 
 ## Install
 
-```sh
-pnpm add mailcheck
-# or: npm install mailcheck / yarn add mailcheck
+This package is **not published to npm**. Consume it locally — as a workspace
+package in a monorepo, or via a git/file dependency:
+
+```jsonc
+// package.json
+{
+  "dependencies": {
+    "mailcheck": "workspace:*"        // pnpm/yarn workspace
+    // or: "mailcheck": "file:../mailcheck"
+    // or: "mailcheck": "github:mailcheck/mailcheck"
+  }
+}
 ```
+
+Run `pnpm build` first so `dist/` exists for consumers.
 
 `react` is an optional peer dependency — only required if you import
 `mailcheck/react`.
